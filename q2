@@ -1,0 +1,47 @@
+#include <iostream>
+using namespace std;
+int main() {
+  int choice;
+  float area;
+  int length;
+  int width;
+  int radius;
+  int height;
+  double pi;
+  
+  cout<<"Enter choice to calculat area"<<endl;
+  cout<<"1.Rectangle"<<endl;
+  cout<<"2.Triangle"<<endl;
+  cout<<"3.circle"<<endl;
+  cin>>choice;
+  
+  switch(choice){
+      case 1:
+      cout<<"Enter length and width";
+      cin >> length >> width;
+      area = length * width;
+      cout<<"Area of rectangle"<<area<<endl;
+      break;
+      
+      case 2:
+      cout<<"Enter base and height";
+      cin >> length >> height;
+      area = 0.5 * length * height;
+      cout<<"Area of triangle"<<area<<endl;
+      break;
+      
+      case 3:
+      cout<<"Enter the radius";
+      cin >> radius;
+      area = 3.14 * radius * radius;
+      cout<<"Area of circle"<<area<<endl;
+      break;
+      
+      default:
+      cout<<"Invalid, Enter your choice 1,2 or 3"<<endl;
+      break;
+      
+       }
+      
+      
+  }
